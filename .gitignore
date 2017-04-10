@@ -5,7 +5,7 @@ node_modules/
 error_log
 
 .vagrant
-config.yaml
+#config.yaml
 
 # OS generated files #
 ######################
