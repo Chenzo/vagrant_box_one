@@ -8,4 +8,6 @@ Built on a [Scotch Box](https://box.scotch.io/) for Digital Ocean deployment.
 
 This also contains a *almost* totally blank PHP template with a gulp and sass for development.
 
-Example running here: http://192.168.33.10/
+Example running here: http://138.197.25.175/
+
+TODO: why does my htaccess file break the site!?
