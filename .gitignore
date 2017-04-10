@@ -1,0 +1,19 @@
+
+node_modules
+node_modules/
+.sass-cache/
+error_log
+
+.vagrant
+config.yaml
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+
+
+# Sublime Files #
+*.sublime-project
+*.sublime-workspace

@@ -1,0 +1,12 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+#LIVE
+RewriteBase /
+
+#--------------------------------------
+#-- 404 & 500 Redirects
+#--------------------------------------
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
