@@ -1,0 +1,6 @@
+
+
+configs:
+    host: "IP"
+    username: "UN"
+    password: "PW"
