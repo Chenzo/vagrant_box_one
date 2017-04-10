@@ -1,0 +1,20 @@
+
+body {
+    background: $white_1;
+    text-rendering: optimizeLegibility;
+    //-webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: $base_font_family;
+    font-size: 15px;
+    font-weight: 300;
+    color: $base_font_color;
+
+}
+
+
+
+.page_margins {
+	width: 98%;
+	max-width: 1200px;
+	margin: 0 auto;
+}

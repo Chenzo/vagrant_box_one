@@ -1,0 +1,21 @@
+{
+  "name": "boilerplate",
+  "version": "2.0.0",
+  "description": "Starting BoilerPlate project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vince Suriani",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp.spritesmith": "^6.2.1"
+  }
+}

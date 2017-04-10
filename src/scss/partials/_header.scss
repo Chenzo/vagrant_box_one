@@ -1,0 +1,33 @@
+
+header {
+
+	background-color: #333333;
+	color: #cccccc;
+	height: 100px;
+
+	.sitelogo {
+		margin: 10px 0 0 40px;
+		float: left;
+	}
+
+	nav {
+		float: right;
+		padding-right: 50px;
+		height: 100px;
+		display: flex;
+		align-items: center;
+
+		a {
+			color: #cccccc;
+			text-decoration: none;
+			margin-left: 20px;
+			font-size: 20px;
+		}
+	}
+
+
+
+
+}
+
+

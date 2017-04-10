@@ -1,0 +1,19 @@
+footer {
+	
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100px;
+	overflow: hidden;
+	background-color: #666666;
+	color: #000000;
+	text-align: center;
+
+	a {
+		color: #000000;
+		text-decoration: none;
+		margin: 0 10px;
+	}
+
+}

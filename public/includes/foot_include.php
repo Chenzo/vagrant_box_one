@@ -1,6 +1,10 @@
 
-<script type="text/javascript" src="https://cdn.tollbrothers.com/common/js/jquery/jquery-1.11.3.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 
+  
 <?php if($buildToggle) { ?>
 	<script type="text/javascript" src="/js/scripts.min.js?v=<?=$cacheBusterNumber; ?>"></script>
 <?php } else { ?>	

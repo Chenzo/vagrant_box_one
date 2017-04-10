@@ -1,0 +1,312 @@
+/**
+  * BOOTSTRAP GRID - I totally ganked it. 
+**/
+
+
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  @include container-fixed;
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  @include make-row;
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@include make-grid-columns;
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+@include make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: $screen-sm-min) {
+  @include make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $screen-md-min) {
+  @include make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: $screen-lg-min) {
+  @include make-grid(lg);
+}
+
+
+
+
+
+
+
+
+
+/**
+ * Gridpak Beta SCSS 
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+
+/* Reusable column setup */
+
+
+
+/* --- Gridpak variables ---*/ 
+$max_columns: 24;
+$padding: 0 0%;
+$gutter_px: 0;
+$gutter_pc: 1%;
+
+
+@mixin span($num, $gutter_pc, $gutter_px, $padding, $max_columns) {
+    $one_col: (100% - ($gutter_pc * ($max_columns - 1))) / $max_columns;
+    width:($one_col * $num) + ($gutter_pc * ($num - 1));
+}
+
+
+@mixin span_first {
+    margin-left: 0;
+}
+
+
+ /*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 0 0 0 $gutter_pc;
+    padding: 0 0%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+.span_1 {
+    @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_2 {
+    @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_3 {
+    @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_4 {
+    @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_5 {
+    @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_6 {
+    @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_7 {
+    @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_8 {
+    @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_9 {
+    @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_10 {
+    @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_11 {
+    @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_12 {
+    @include span(12, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_13 {
+    @include span(13, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_14 {
+    @include span(14, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_15 {
+    @include span(15, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_16 {
+    @include span(16, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_17 {
+    @include span(17, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_18 {
+    @include span(18, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_19 {
+    @include span(19, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_20 {
+    @include span(20, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_21 {
+    @include span(21, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_22 {
+    @include span(22, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_23 {
+    @include span(23, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_24 {
+    @include span_first;
+    width:100%;
+}
+
+.col.no-margin {
+    margin: 0;
+
+    &.span_1 {
+        @include span(1, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_2 {
+        @include span(2, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_3 {
+        @include span(3, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_4 {
+        @include span(4, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_5 {
+        @include span(5, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_6 {
+        @include span(6, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_7 {
+        @include span(7, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_8 {
+        @include span(8, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_9 {
+        @include span(9, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_10 {
+        @include span(10, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_11 {
+        @include span(11, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_12 {
+        @include span(12, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_13 {
+        @include span(13, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_14 {
+        @include span(14, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_15 {
+        @include span(15, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_16 {
+        @include span(16, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_17 {
+        @include span(17, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_18 {
+        @include span(18, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_19 {
+        @include span(19, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_20 {
+        @include span(20, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_21 {
+        @include span(21, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_22 {
+        @include span(22, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_23 {
+        @include span(23, 0, $gutter_px, $padding, $max_columns);
+    }
+    &.span_24 {
+        width:100%;
+    }
+    
+}
+
+@media only screen and (max-width: $medium-breakpoint) {
+    .span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10,
+    .span_11, .span_12, .span_13, .span_14, .span_15, .span_16, .span_17, .span_18, .span_19, .span_20
+    .span_21, .span_22, .span_23, .span_24 {
+        width: 100%;
+        margin-left: 0;
+        
+        &.col.no-margin {
+            width: 100%;
+        }
+        
+    }
+
+}
